@@ -1,4 +1,10 @@
 :root {
+    --gradient-dark: rgba(1, 1, 1, 1);
+    --gradient-transparent: rgba(0, 0, 0, 0);
+
+    --color-main-white: rgb(255, 255, 255);
+
+    --color-blue-btn: rgba(35, 166, 240, 1);
 }
 
 *,
@@ -16,4 +22,126 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-image:
+            linear-gradient(to right,
+            var(--gradient-dark), var(--gradient-transparent)),
+            url(../img/hero-cover.1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 110rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+}
+
+.nav-brand{
+    text-decoration: none;
+    color: var(--color-main-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 12rem;
+}
+
+.nav-items{
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--color-main-white);
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 2rem;
+}
+
+.nav-btn-container{
+}
+
+.btn-login{
+    margin-right: 4.5rem;
+}
+
+.btn-text{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-main-white);
+    line-height: 2.2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.blue-btn{
+    background-color: var(--color-blue-btn);
+}
+
+.nav-btn{
+    padding: 1.5rem 2.5rem ;
+    border-radius: 5px;
+}
+
+.header-context-container{
+    width: 60rem;
+    margin-top: 12.5rem;
+}
+
+.header-title{
+    font-size: 5.8rem;
+    font-weight: 800;
+    line-height: 8rem;
+    letter-spacing: 1px;
+    color: var(--color-main-white);
+    margin-bottom: 3.5rem;
+}
+
+.header-subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: .8px;
+    color: var(--color-main-white);
+    margin-bottom: 3.5rem;
+    width: 50rem;
+}
+
+.header-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 37rem;
+}
+.header-btn{
+    padding: 1.5rem 3.5rem;
+    border-radius: 10rem;
+    margin-bottom: 12rem;
+}
+
+.white-border-btn{
+    border: 1px solid var(--color-main-white);
 }
