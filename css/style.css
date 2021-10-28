@@ -2,6 +2,7 @@
     --gradient-dark: rgba(1, 1, 1, 1);
     --gradient-transparent: rgba(0, 0, 0, 0);
 
+    --poster-dark-gradient: rgba(56, 56, 56, .84);
     --color-main-white: rgb(255, 255, 255);
     --color-blue-btn: rgba(35, 166, 240, 1);
     --color-light-blue: rgba(142, 194, 242, 1);
@@ -30,10 +31,9 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    background-image:
-            linear-gradient(to right,
-            var(--gradient-dark), var(--gradient-transparent)),
-            url(../img/hero-cover.1.jpg);
+    background-image: linear-gradient(to right,
+    var(--gradient-dark), var(--gradient-transparent)),
+    url(../img/hero-cover.1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -53,7 +53,7 @@ body {
     width: 100%;
 }
 
-.nav-brand{
+.nav-brand {
     text-decoration: none;
     color: var(--color-main-white);
     font-size: 2.4rem;
@@ -62,16 +62,16 @@ body {
     margin-right: 12rem;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     flex-grow: 1;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: var(--color-main-white);
     font-weight: 500;
@@ -79,18 +79,18 @@ body {
     letter-spacing: 1px;
 }
 
-.nav-item:not(:last-child){
+.nav-item:not(:last-child) {
     margin-right: 2rem;
 }
 
-.nav-btn-container{
+.nav-btn-container {
 }
 
-.btn-login{
+.btn-login {
     margin-right: 4.5rem;
 }
 
-.btn-text{
+.btn-text {
     display: inline-block;
     text-decoration: none;
     color: var(--color-main-white);
@@ -100,21 +100,21 @@ body {
     letter-spacing: 1px;
 }
 
-.blue-btn{
+.blue-btn {
     background-color: var(--color-blue-btn);
 }
 
-.nav-btn{
-    padding: 1.5rem 2.5rem ;
+.nav-btn {
+    padding: 1.5rem 2.5rem;
     border-radius: 5px;
 }
 
-.header-context-container{
+.header-context-container {
     width: 60rem;
     margin-top: 12.5rem;
 }
 
-.header-title{
+.header-title {
     font-size: 5.8rem;
     font-weight: 800;
     line-height: 8rem;
@@ -123,7 +123,7 @@ body {
     margin-bottom: 3.5rem;
 }
 
-.header-subtitle{
+.header-subtitle {
     font-size: 2rem;
     font-weight: 500;
     line-height: 3rem;
@@ -133,35 +133,37 @@ body {
     width: 50rem;
 }
 
-.header-btn-container{
+.header-btn-container {
     display: flex;
     justify-content: space-between;
     width: 37rem;
 }
-.header-btn{
+
+.header-btn {
     padding: 1.5rem 3.5rem;
     border-radius: 10rem;
     margin-bottom: 12rem;
 }
 
-.white-border-btn{
+.white-border-btn {
     border: 1px solid var(--color-main-white);
 }
 
-.features{
+.features,
+.posters {
     background-color: var(--color-dark-blue);
 }
 
-.feature-container{
+.feature-container {
     display: flex;
     justify-content: center;
 }
 
-.feature-container:not(:last-child){
+.feature-container:not(:last-child) {
     margin-right: 3rem;
 }
 
-.feature-card{
+.feature-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,19 +173,20 @@ body {
     margin: 9.5rem 0;
 }
 
-.feature-card-img{
+.feature-card-img {
     width: 5.6rem;
     margin-bottom: 3rem;
 }
 
-.feature-card-frame{
+.feature-card-frame {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 23.5rem;
 }
-.feature-card-title{
+
+.feature-card-title {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--color-main-white);
@@ -191,7 +194,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.feature-card-subtitle{
+.feature-card-subtitle {
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--color-main-white);
@@ -199,18 +202,19 @@ body {
     text-align: center;
 }
 
-.testimonials{
+.testimonials {
     background-color: var(--color-light-blue);
 }
 
-.testimonials-container{
+.testimonials-container,
+.posters-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 11rem 0;
 }
 
-.main-heading-box{
+.main-heading-box {
     width: 47rem;
     display: flex;
     flex-direction: column;
@@ -218,7 +222,7 @@ body {
     margin-bottom: 8rem;
 }
 
-.main-heading{
+.main-heading {
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.7rem;
@@ -226,7 +230,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.main-subheading{
+.main-subheading {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
@@ -234,15 +238,15 @@ body {
     text-align: center;
 }
 
-.testimonials-bottom-container{
+.testimonials-bottom-container {
     display: flex;
 }
 
-.testimonials-bottom-container:not(:last-child){
+.testimonials-bottom-container:not(:last-child) {
     margin-right: 3rem;
 }
 
-.testimonial-card{
+.testimonial-card {
     width: 45rem;
     background-color: var(--color-main-white);
     position: relative;
@@ -251,7 +255,7 @@ body {
     padding-left: 4rem;
 }
 
-.testimonial-user{
+.testimonial-user {
     position: absolute;
     top: 2rem;
     left: -5rem;
@@ -259,26 +263,83 @@ body {
     border-radius: 20rem;
 }
 
-.testimonial-card-heading{
+.testimonial-card-heading {
     font-size: 2.4rem;
     line-height: 3.2rem;
     color: var(--color-dark-blue);
     margin-top: 3rem;
 }
 
-.testimonial-card-profession{
+.testimonial-card-profession {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.4rem;
     color: var(--color-light-grey);
     margin-bottom: 1.5rem;
 }
-.testimonial-text{
+
+.testimonial-text {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
     color: var(--color-light-grey);
     margin-top: 1.5rem;
     margin-bottom: 3rem
+}
+
+.posters-box {
+    display: flex;
+    width: 140rem;
+    justify-content: space-between;
+}
+
+
+.poster {
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 45rem;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.poster-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    background: linear-gradient(
+            to top,
+            var(--poster-dark-gradient),
+            var(--gradient-transparent));
+}
+
+.poster-description {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--color-main-white);
+    margin-bottom: 1.5rem
+}
+
+.poster-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--color-main-white);
+    margin-bottom: 1.5rem
+}
+
+.poster-btn {
+    padding: 1rem 3.6rem;
+    border-radius: 20rem;
+    margin-bottom: 1.7rem;
 }
 
