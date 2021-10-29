@@ -306,7 +306,6 @@ body {
 
 .poster-img {
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
@@ -341,5 +340,6 @@ body {
     padding: 1rem 3.6rem;
     border-radius: 20rem;
     margin-bottom: 1.7rem;
+    z-index: 1;
 }
 
