@@ -30,6 +30,12 @@ body {
     font-style: normal;
 }
 
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 144rem;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -471,6 +477,8 @@ body {
     url("../img/contact.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
 }
 
 .appointment-container {
@@ -500,7 +508,7 @@ body {
     margin-top: 4rem;
 }
 
-.appointment-form-input{
+.appointment-form-input {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.8rem;
@@ -515,7 +523,7 @@ body {
 
 
 .appointment-form-input:focus,
-.appointment-message:focus{
+.appointment-message:focus {
     outline: none;
     border: 1px solid var(--color-grey);
 }
@@ -545,41 +553,56 @@ body {
     padding: 1.5rem 4rem;
 }
 
-.contact-us-container{
+.contact,
+.footer {
     display: flex;
+    justify-content: center;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     margin: 0 20rem;
     padding: 4rem 0;
 }
 
-.contact-us-title{
+.contact-us-title {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.2rem;
     color: var(--color-dark-blue);
 }
 
-.contact-us-subtitle{
+.contact-us-subtitle {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
     color: var(--color-grey);
 }
 
-.contact-btn{
+.contact-btn {
     padding: 1.5rem 4rem;
     border-radius: 5px;
 }
 
-.footer-links-container{
-    display: flex;
-    justify-content: space-between;
+.footer {
     background-color: var(--color-dark-blue);
+}
+
+.footer-container {
+
+}
+
+.footer-links-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     padding: 5rem 20rem;
 }
 
-.links-title{
+.links-title {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.4rem;
@@ -587,15 +610,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.footer-link{
+.footer-link {
     list-style: none;
 }
 
-.footer-link:not(:last-child){
+.footer-link:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-.footer-link-item{
+.footer-link-item {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
@@ -605,6 +628,6 @@ body {
     text-decoration: none;
 }
 
-.footer-img{
+.footer-img {
     margin-right: 1.5rem;
 }
