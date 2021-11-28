@@ -1,4 +1,15 @@
 :root {
+    --gradient-dark: rgba(1, 1, 1, 1);
+    --gradient-transparent: rgba(0, 0, 0, 0);
+    --color-green: rgba(45, 192, 113, 1);
+    --color-dark-grey: rgba(56, 56, 56, .84);
+    --color-main-white: rgb(255, 255, 255);
+    --color-blue: rgba(35, 166, 240, 1);
+    --color-light-blue: rgba(142, 194, 242, 1);
+    --color-dark-blue: rgba(37, 43, 66, 1);
+    --color-grey: rgba(115, 115, 115, 1);
+    --color-orange: rgb(231, 124, 64, 1);
+    --color-light-grey: rgb(229, 229, 229, 1);
 }
 
 *,
@@ -16,4 +27,759 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 144rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,
+    var(--gradient-dark), var(--gradient-transparent)),
+    url(../img/hero-cover.1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 110rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+}
+
+.nav-brand {
+    text-decoration: none;
+    color: var(--color-main-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 12rem;
+}
+
+.nav-items {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-main-white);
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav-btn-container {
+}
+
+.btn-login {
+    margin-right: 4.5rem;
+}
+
+.btn-text {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-main-white);
+    line-height: 2.2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.blue-btn {
+    background-color: var(--color-blue);
+}
+
+.nav-btn {
+    padding: 1.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+.header-context-container {
+    width: 60rem;
+    margin-top: 12.5rem;
+}
+
+.header-title {
+    font-size: 5.8rem;
+    font-weight: 800;
+    line-height: 8rem;
+    letter-spacing: 1px;
+    color: var(--color-main-white);
+    margin-bottom: 3.5rem;
+}
+
+.header-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    color: var(--color-main-white);
+    margin-bottom: 3.5rem;
+    width: 50rem;
+}
+
+.header-btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 37rem;
+}
+
+.header-btn {
+    padding: 1.5rem 3.5rem;
+    border-radius: 10rem;
+    margin-bottom: 12rem;
+}
+
+.white-border-btn {
+    border: 1px solid var(--color-main-white);
+}
+
+.features,
+.posters,
+.pricing {
+    background-color: var(--color-dark-blue);
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-container:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32.5rem;
+    height: 24rem;
+    margin: 9.5rem 0;
+}
+
+.feature-card-img {
+    width: 5.6rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23.5rem;
+}
+
+.feature-card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-main-white);
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-main-white);
+    line-height: 2rem;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: var(--color-light-blue);
+}
+
+.testimonials-container,
+.posters-container,
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11rem 0;
+}
+
+.main-heading-box {
+    width: 47rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.main-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    color: var(--color-main-white);
+    margin-bottom: 1rem;
+}
+
+.main-subheading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--color-main-white);
+    text-align: center;
+}
+
+.testimonials-bottom-container {
+    display: flex;
+}
+
+.testimonials-bottom-container:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.testimonial-card {
+    width: 45rem;
+    background-color: var(--color-main-white);
+    position: relative;
+    margin: 4rem 2.4rem 3.3rem 9.2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.testimonial-user {
+    position: absolute;
+    top: 2rem;
+    left: -5rem;
+    width: 7.2rem;
+    border-radius: 20rem;
+}
+
+.testimonial-card-heading {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: var(--color-dark-blue);
+    margin-top: 3rem;
+}
+
+.testimonial-card-profession {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--color-grey);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--color-grey);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem
+}
+
+.posters-box {
+    display: flex;
+    width: 140rem;
+    justify-content: space-between;
+}
+
+
+.poster {
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 45rem;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.poster-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.poster-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    background: linear-gradient(
+            to top,
+            var(--color-dark-grey),
+            var(--gradient-transparent));
+}
+
+.poster-description {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--color-main-white);
+    margin-bottom: 1.5rem
+}
+
+.poster-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--color-main-white);
+    margin-bottom: 1.5rem
+}
+
+.poster-btn {
+    padding: 1rem 3.6rem;
+    border-radius: 20rem;
+    margin-bottom: 1.7rem;
+    z-index: 1;
+}
+
+.boards-container {
+    display: flex;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33rem;
+    background-color: var(--color-main-white);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.board:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.board-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--color-orange);
+    color: var(--color-main-white);
+    border-radius: 20rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: -3rem;
+    right: 1.5rem;
+}
+
+
+.board-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: var(--color-dark-blue);
+    margin: 5rem 0 3.5rem 0
+
+}
+
+.board-subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-grey);
+    width: 16rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.board-pricing {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    color: var(--color-blue);
+}
+
+.period-of-time {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-light-blue);
+}
+
+.btn-board {
+    padding: 1.5rem 8.2rem;
+    background-color: var(--color-blue);
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.board-get {
+    margin: 3.5rem 0;
+}
+
+.board-get-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--color-dark-blue);
+}
+
+.board-get-item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.board-item-img {
+    width: 1.6rem;
+}
+
+.board-check-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 20rem;
+    margin-right: 1rem;
+}
+
+.b-color-green {
+    background-color: var(--color-green);
+}
+
+.b-color-grey {
+    background-color: var(--color-grey);
+}
+
+.appointment {
+    height: 67rem;
+    background-image: linear-gradient(to right,
+    var(--color-main-white),
+    var(--gradient-transparent)),
+    url("../img/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.appointment-container {
+    margin-left: 19.5rem;
+    padding-top: 9rem;
+    max-width: 60rem;
+}
+
+.appointment-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-dark-blue);
+}
+
+.appointment-subtitle {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    color: var(--color-dark-blue);
+}
+
+.appointment-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.appointment-form-input {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    padding: 0 2rem;
+    width: 28.5rem;
+    height: 5rem;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 5px;
+    color: var(--color-dark-grey);
+    margin-bottom: 2rem;
+}
+
+
+.appointment-form-input:focus,
+.appointment-message:focus {
+    outline: none;
+    border: 1px solid var(--color-grey);
+}
+
+.appointment-message {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 14rem;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 5px;
+    color: var(--color-dark-grey);
+    resize: none;
+    padding: 2rem;
+}
+
+.appointment-message::placeholder,
+.appointment-form-input::placeholder,
+.select-placeholder {
+    opacity: .6;
+}
+
+.appointment-form-submit {
+    margin-top: 4rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1.5rem 4rem;
+}
+
+.contact,
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20rem;
+    padding: 4rem 0;
+}
+
+.contact-us-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: var(--color-dark-blue);
+}
+
+.contact-us-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--color-grey);
+}
+
+.contact-btn {
+    padding: 1.5rem 4rem;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: var(--color-dark-blue);
+}
+
+.footer-links-box {
+    width: 23rem;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 20rem;
+}
+
+.links-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-main-white);
+    margin-bottom: 2rem;
+}
+
+.footer-link {
+    list-style: none;
+}
+
+.footer-link:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.footer-link-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: var(--color-main-white);
+    text-decoration: none;
+}
+
+.footer-img {
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .posters-box {
+        flex-wrap: wrap;
+        width: 69rem;
+    }
+
+    .poster {
+        margin-bottom: 3rem;
+    }
+
+    .footer-links-container {
+        padding: 5rem 18rem;
+    }
+
+    .footer-links-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links-box {
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .footer-links-container {
+        padding: 5rem 15rem;
+    }
+
+    .appointment .main-container {
+        flex-grow: 0;
+        justify-content: center;
+    }
+
+    .appointment-container {
+        margin: 0;
+        text-align: center;
+    }
+
+    .appointment-form-submit {
+        margin-left: 20rem;
+    }
+
+    .footer-links-box {
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .header-container {
+        width: 95rem;
+        align-items: center
+    }
+
+    .header-context-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-subtitle {
+        text-align: center;
+        width: 60rem;
+    }
+
+    .testimonials-bottom-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-card {
+        margin: 4rem;
+    }
+
+    .contact-us-container {
+        margin: 0 15rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .boards-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50rem
+    }
+
+    .board:not(:last-child) {
+        margin-bottom: 5rem;
+        margin-right: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        width: 70rem;
+    }
+
+    .nav-items {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .contact .main-container {
+        justify-content: center;
+    }
+
+    .contact-us-container {
+        justify-content: center;
+        flex-grow: 0;
+        flex-wrap: wrap;
+        width: 50rem;
+    }
+
+    .contact-us-subtitle {
+        text-align: center;
+    }
+
+    .contact-btn {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        margin: 0;
+    }
+
+    .posters-box {
+        justify-content: center;
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        width: 60rem;
+    }
 }
